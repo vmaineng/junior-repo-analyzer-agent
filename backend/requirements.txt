@@ -1,0 +1,17 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+anthropic==0.34.0
+python-dotenv==1.0.0
+httpx==0.25.0
+pydantic==2.5.0
+```
+
+### **2. backend/.env.example**
+```
+# Anthropic API Key (Required)
+# Get your API key from: https://console.anthropic.com/
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# GitHub Token (Optional but recommended for higher rate limits)
+# Create a personal access token at: https://github.com/settings/tokens
+GITHUB_TOKEN=your_github_token_here
