@@ -10,8 +10,5 @@ pydantic==2.5.0
 ```
 # Anthropic API Key (Required)
 # Get your API key from: https://console.anthropic.com/
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
+ANTHROPIC_API_KEY="ANTHROPIC_API_KEY
 
-# GitHub Token (Optional but recommended for higher rate limits)
-# Create a personal access token at: https://github.com/settings/tokens
-GITHUB_TOKEN=your_github_token_here
