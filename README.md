@@ -63,14 +63,14 @@ Example repositories to analyze:
 
 - Node.js 18+
 - Python 3.11+
-- Anthropic API Key ([Get one free](https://console.anthropic.com/))
+- Anthropic API Key 
 - GitHub Token (optional, for higher rate limits)
 
 ### Installation
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/junior-repo-analyzer.git
+git clone https://github.com/vmaineng/junior-repo-analyzer-agent/tree/main
 cd junior-repo-analyzer
 ```
 
