@@ -28,6 +28,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "http://localhost:3001", 
                    "https://junior-repo-analyzer-agent.vercel.app",
+                   "https://junior-repo-analyzer-agent-o1hf-8m6ah57nm-vmainengs-projects.vercel.app/",
                    "https://*.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
