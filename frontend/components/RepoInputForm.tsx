@@ -35,7 +35,7 @@ export default function RepoInputForm({
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 border-2 border-gray-200 dark:border-gray-700">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+          <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
             <GitBranch className="w-7 h-7 text-white" />
           </div>
           <div>
@@ -72,55 +72,6 @@ export default function RepoInputForm({
               Example: https://github.com/facebook/react or facebook/react
             </p>
           </div>
-
-          {/* Advanced Options Toggle */}
-          <button
-            type="button"
-            onClick={() => setShowAdvanced(!showAdvanced)}
-            className="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"
-          >
-            {showAdvanced ? "▼" : "▶"} Advanced Options (Optional)
-          </button>
-
-          {/* GitHub Token Input (Collapsible) */}
-          {showAdvanced && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              className="overflow-hidden"
-            >
-              <div className="pt-2">
-                <label
-                  htmlFor="github-token"
-                  className="block text-sm font-semibold mb-2"
-                >
-                  GitHub Personal Access Token
-                </label>
-                <input
-                  id="github-token"
-                  type="password"
-                  value={githubToken}
-                  onChange={(e) => setGithubToken(e.target.value)}
-                  placeholder="ghp_xxxxxxxxxxxx (optional)"
-                  className="w-full px-4 py-3 rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
-                  disabled={isLoading}
-                />
-                <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-                  Providing a token increases API rate limits. Get one{" "}
-                  <a
-                    href="https://github.com/settings/tokens"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
-                  >
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </motion.div>
-          )}
 
           {/* Submit Button */}
           <motion.button

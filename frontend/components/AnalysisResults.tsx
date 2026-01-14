@@ -66,7 +66,7 @@ export default function AnalysisResults({ analysis }: AnalysisResultsProps) {
       >
         <div className="flex items-start gap-4">
           <div
-            className={`flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center ${
+            className={`shrink-0 w-14 h-14 rounded-full flex items-center justify-center ${
               is_junior_friendly
                 ? "bg-emerald-500 text-white"
                 : "bg-rose-500 text-white"
@@ -111,7 +111,6 @@ export default function AnalysisResults({ analysis }: AnalysisResultsProps) {
         </div>
       </motion.div>
 
-      {/* Repository Stats */}
       <motion.div
         variants={itemVariants}
         className="grid grid-cols-2 md:grid-cols-4 gap-4"
@@ -142,7 +141,6 @@ export default function AnalysisResults({ analysis }: AnalysisResultsProps) {
         />
       </motion.div>
 
-      {/* Activity Info */}
       <motion.div
         variants={itemVariants}
         className="bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-200 dark:border-blue-800 rounded-xl p-6"
@@ -302,7 +300,7 @@ function InfoSection({ title, items, icon, color }: InfoSectionProps) {
   return (
     <div className={`${colors.bg} border-2 ${colors.border} rounded-xl p-6`}>
       <div className="flex items-start gap-3 mb-4">
-        <div className={`${colors.icon} flex-shrink-0 mt-1`}>{icon}</div>
+        <div className={`${colors.icon} shrink-0 mt-1`}>{icon}</div>
         <h3 className={`text-xl font-bold ${colors.text}`}>{title}</h3>
       </div>
       <ul className="space-y-3">

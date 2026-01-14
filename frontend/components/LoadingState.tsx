@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Loader2, GitBranch, Search, Sparkles } from "lucide-react";
+import { GitBranch, Search, Sparkles } from "lucide-react";
 
 export default function LoadingState() {
   return (
@@ -67,9 +67,7 @@ function LoadingStep({
       transition={{ delay, duration: 0.5 }}
       className="flex items-center gap-3 text-left bg-gray-50 dark:bg-gray-900 px-4 py-3 rounded-lg"
     >
-      <div className="flex-shrink-0 text-blue-600 dark:text-blue-400">
-        {icon}
-      </div>
+      <div className="shrink-0 text-blue-600 dark:text-blue-400">{icon}</div>
       <span className="text-sm text-gray-700 dark:text-gray-300">{text}</span>
     </motion.div>
   );
