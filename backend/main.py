@@ -11,6 +11,16 @@ import re
 
 load_dotenv()
 
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+if not ANTHROPIC_API_KEY:
+    raise ValueError(
+        "❌ ANTHROPIC_API_KEY not found in environment variables!\n"
+        "Please add it to your .env file:\n"
+        "ANTHROPIC_API_KEY=sk-ant-api03-your-key-here"
+    )
+
+print(f"✅ API Key loaded successfully (starts with: {ANTHROPIC_API_KEY[:15]}...)")
+
 app = FastAPI(title="Junior Repo Analyzer API")
 
 # CORS configuration for Next.js frontend
@@ -22,8 +32,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-claude_client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-
+claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+print("✅ Anthropic client initialized successfully")
 
 class RepoAnalysisRequest(BaseModel):
     """Request model for repository analysis"""
