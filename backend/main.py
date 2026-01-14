@@ -27,7 +27,7 @@ app = FastAPI(title="Junior Repo Analyzer API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "http://localhost:3001", 
-                   "https://junior-repo-analyzer-agent.vercel.app/",
+                   "https://junior-repo-analyzer-agent.vercel.app",
                    "https://*.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
