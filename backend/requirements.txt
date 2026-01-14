@@ -4,11 +4,3 @@ anthropic==0.34.0
 python-dotenv==1.0.0
 httpx==0.25.0
 pydantic==2.5.0
-```
-
-### **2. backend/.env.example**
-```
-# Anthropic API Key (Required)
-# Get your API key from: https://console.anthropic.com/
-ANTHROPIC_API_KEY="ANTHROPIC_API_KEY
-
