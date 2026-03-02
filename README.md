@@ -16,6 +16,14 @@ Paste any GitHub repository URL and get instant AI-powered analysis:
 ✅ **Tech Stack Analysis** - What skills you'll need  
 ✅ **Actionable Recommendations** - Where to start contributing
 
+
+## 🎯 Why I built it
+
+- Could not find an active repo with responsive maintainers to contribute to
+- Unsure if my capabilities were able to contribute to the repo
+
+- **SIDE NOTE: PLEASE DO NOT LET THIS DISCOURAGE YOU AND PLEASE STILL GIVE YOURSELF AN OPPORTUNITY TO CONTRIBUTE TO ANY REPO YOU WANT TO THE BEST OF YOUR ABILITY
+
 ## 🌟 Features
 
 - **AI-Powered Analysis** using Claude Sonnet 4
