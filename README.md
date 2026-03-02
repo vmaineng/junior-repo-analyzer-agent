@@ -57,13 +57,6 @@ Example repositories to analyze:
 - `firstcontributions/first-contributions`
 - `microsoft/vscode`
 
-## 📸 Screenshots
-
-<!-- ### Analysis Results
-![Analysis Results](https://via.placeholder.com/600x400?text=Add+Results+Screenshot)
-
-### Loading State
-![Loading Animation](https://via.placeholder.com/600x400?text=Add+Loading+Screenshot) -->
 
 ## 🏃‍♂️ Quick Start
 
